@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Toolfan91",
+    "database": "foodie_db",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Toolfan91",
+    "database": "foodie_db_test",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Toolfan91",
+    "database": "foodie_db_production",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  }
+}

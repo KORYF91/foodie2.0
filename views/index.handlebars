@@ -1,0 +1,38 @@
+<h1>FOoDiE</h1>
+
+<h2>NoT EaTen !!!</h2>
+
+<li>
+    {{#each food}}
+    {{#unless devoured}}
+    {{>food/food-block eaten=true}}
+    {{/unless}}
+    {{/each}}
+</li>
+
+<h2>EaTeN !!!</h2>
+
+<li>
+    {{#each food}}
+    {{#if devoured}}
+    {{> food/food-block eaten=false}}
+    {{/if}}
+    {{/each}}
+</li>
+
+<h2>ADD FoOdIe !!!</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">FoOdIe Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="eaten">EaTeN?</label><br>
+    <input type="radio" name="devoured" value="1" checked> EaTeN!<br>
+    <input type="radio" name="devoured" value="0"> NoT eAtEn
+  </div>
+
+  <button type="submit">Add FoOdIe</button>
+</form>
